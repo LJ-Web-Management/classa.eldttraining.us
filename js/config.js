@@ -33,4 +33,27 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  // Curriculum modules & FAQ: expand on hover (preview), stay open once clicked (locked)
+  document.querySelectorAll('.module, .faq-item').forEach(function (el) {
+    el.addEventListener('mouseenter', function () {
+      el.open = true;
+    });
+    el.addEventListener('mouseleave', function () {
+      if (!el.dataset.locked) el.open = false;
+    });
+    var summary = el.querySelector('summary');
+    if (summary) {
+      summary.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (el.dataset.locked) {
+          delete el.dataset.locked;
+          el.open = false;
+        } else {
+          el.dataset.locked = '1';
+          el.open = true;
+        }
+      });
+    }
+  });
 });
