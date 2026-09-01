@@ -314,5 +314,32 @@
 </footer>
 
 <script src="js/checkout.js"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+// Suppress only the widget's own auto-open trigger right after it loads;
+// a real click on the bubble after this window opens the chat normally.
+var tawkSuppressAutoOpenUntil = 0;
+Tawk_API.onLoad = function () {
+  tawkSuppressAutoOpenUntil = Date.now() + 4000;
+  Tawk_API.minimize();
+};
+Tawk_API.onChatMaximized = function () {
+  if (Date.now() < tawkSuppressAutoOpenUntil) Tawk_API.minimize();
+};
+setTimeout(function () {
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+}, 2500);
+</script>
+<!--End of Tawk.to Script-->
+
 </body>
 </html>
