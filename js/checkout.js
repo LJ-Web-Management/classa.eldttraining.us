@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
         payment_method_id: paymentMethodId,
         order_type: 'normal',
         order_status: 'pending',
-        order_from: 'class-a.eldttraining.us',
+        order_from: 'classa.eldttraining.us',
         billing_first_name: firstName,
         billing_last_name: lastName,
         billing_name: firstName + ' ' + lastName,
