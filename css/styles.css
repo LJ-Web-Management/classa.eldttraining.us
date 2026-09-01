@@ -101,8 +101,13 @@ section.section { padding: 88px 0; }
 
 /* Hero */
 .hero {
-  position: relative; background: var(--accent2); color: #fff; overflow: hidden;
-  padding: 72px 0 88px;
+  position: relative; background: var(--accent2) url('../images/hero-bg.jpg') center 65% / cover no-repeat;
+  color: #fff; overflow: hidden; padding: 72px 0 88px;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(100deg, rgba(26,31,33,0.96) 0%, rgba(26,31,33,0.88) 38%, rgba(26,31,33,0.55) 70%, rgba(26,31,33,0.4) 100%);
+  pointer-events: none;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
