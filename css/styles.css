@@ -125,7 +125,6 @@ section.section { padding: 88px 0; }
 .hero-lead { color: rgba(255,255,255,0.78); font-size: 1.1rem; max-width: 520px; margin-bottom: 30px; }
 .hero-cta-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 34px; }
 .hero-price { display: flex; flex-direction: column; }
-.hero-price .list-price { text-decoration: line-through; opacity: 0.55; font-size: 0.9rem; }
 .hero-price .sale-price { font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; color: var(--accent1); }
 .hero-checklist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
 .hero-checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: rgba(255,255,255,0.85); }
@@ -226,7 +225,6 @@ section.section { padding: 88px 0; }
 }
 .pricing-card h2 { color: #fff; font-size: 1.7rem; }
 .pricing-card .price-row { display: flex; align-items: baseline; justify-content: center; gap: 12px; margin: 18px 0 6px; }
-.pricing-card .list-price { text-decoration: line-through; opacity: 0.5; font-size: 1.1rem; }
 .pricing-card .sale-price { font-family: var(--font-heading); font-weight: 800; font-size: 3rem; color: var(--accent1); }
 .pricing-card .price-sub { color: rgba(255,255,255,0.65); font-size: 0.88rem; margin-bottom: 28px; }
 .pricing-list { list-style: none; margin: 0 0 32px; padding: 0; text-align: left; display: inline-grid; gap: 10px; }

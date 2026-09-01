@@ -6,10 +6,10 @@ const API_BASE_URL = "https://hazwoper-osha.com/api";
 // id/sku match the hazwoper-osha.com catalog entry for this course
 // (data-id, data-sku on hazwoper-osha.com/online-courses/cdl-entry-level-driver-training-eldt-class-a).
 // NOTE: price below is a site-side display/checkout-summary price only. hazwoper-osha.com's own
-// catalog entry for course id 304 is priced at $159.99 — the amount actually charged is
+// catalog entry for course id 304 is priced at $159.99, the amount actually charged is
 // determined server-side by hazwoper-osha.com's /add_order response, not by this value.
 var courses = [
-  { id: 304, code: 'class-a', name: 'CDL Entry Level Driver Training (ELDT) - Class A', price: 34.99, listPrice: 199.99, sku: 'ELDTClassA' }
+  { id: 304, code: 'class-a', name: 'CDL Entry Level Driver Training (ELDT) - Class A', price: 35, sku: 'ELDTClassA' }
 ];
 
 function formatMoney(amount) {

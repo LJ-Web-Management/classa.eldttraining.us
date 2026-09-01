@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var course = (typeof courses !== 'undefined' && Array.isArray(courses))
     ? (courses.find(function (c) { return c.code === courseParam; }) || courses[0])
-    : { id: 304, code: 'class-a', name: 'CDL Entry Level Driver Training (ELDT) - Class A', price: 34.99 };
+    : { id: 304, code: 'class-a', name: 'CDL Entry Level Driver Training (ELDT) - Class A', price: 35 };
 
   var getSeats = function () {
     return Math.max(1, parseInt((seatsInput && seatsInput.value) || '1', 10));
