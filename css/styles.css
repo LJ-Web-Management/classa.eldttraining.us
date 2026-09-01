@@ -116,8 +116,7 @@ section.section { padding: 88px 0; }
   margin-bottom: 22px;
 }
 .hero-badge-icon {
-  width: 30px; height: 30px; border-radius: 50%; background: var(--accent1);
-  display: flex; align-items: center; justify-content: center; color: var(--accent2); font-weight: 800; font-size: 0.8rem;
+  width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; object-fit: contain;
 }
 .hero-badge-text { font-family: var(--font-heading); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; }
 .hero-badge-text small { display: block; font-weight: 400; opacity: 0.75; font-size: 0.72rem; letter-spacing: 0; }
